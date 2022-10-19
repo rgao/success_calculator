@@ -28,7 +28,7 @@
           <div class="row mt-5">
             <div class="col-4">
               <h5>Mean Number of Attempts</h5>
-              <form>
+              <form onsubmit="return false;">
                 Upgrade Probability: <input autocomplete="off" type="text" id="upgrade-input1" class="my-3"> %
                 <br>
                 <button type="button" class="my-3" id="button1">Enter</button>
@@ -36,21 +36,10 @@
                 Expected Value: <span id="result1"></span>
               </form>
             </div>
-            <div class="col-4">
-              <h5>Chance to Succeed Given Number of Attempts</h5>
-              <form>
-                Upgrade Probability: <input autocomplete="off" type="text" id="upgrade-input3" class="my-3"> %
-                <br>
-                Number of Attempts: <input autocomplete="off" type="text" id="attempts-input">
-                <br>
-                <button type="button" class="my-3" id="button3">Enter</button>
-                <br>
-                Median Chance to Upgrade: <span id="result3"></span>
-              </form>
-            </div>
+
             <div class="col-4">
               <h5>Number of Attempts for Specified Success Chance</h5>
-              <form>
+              <form onsubmit="return false;">
                 Upgrade Probability: <input autocomplete="off" type="text" id="upgrade-input2" class="my-3"> %
                 <br>
                 Target Success Chance: <input autocomplete="off" type="text" id="target-input"> %
@@ -58,6 +47,19 @@
                 <button type="button" class="my-3" id="button2">Enter</button>
                 <br>
                 Median Number of Attempts: <span id="result2"></span>
+              </form>
+            </div>
+
+            <div class="col-4">
+              <h5>Chance to Succeed Given Number of Attempts</h5>
+              <form onsubmit="return false;">
+                Upgrade Probability: <input autocomplete="off" type="text" id="upgrade-input3" class="my-3"> %
+                <br>
+                Number of Attempts: <input autocomplete="off" type="text" id="attempts-input">
+                <br>
+                <button type="button" class="my-3" id="button3">Enter</button>
+                <br>
+                Median Chance to Upgrade: <span id="result3"></span>
               </form>
             </div>
           </div>
